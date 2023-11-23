@@ -4,7 +4,7 @@ import styles from "./SearchTemplate.module.css";
 // import dadosVeiculos from "../../data/contents.json";
 
 
-const SearchTemplate = ({ search, setSearch, handleSearchChange }) => {
+const SearchTemplate = ({ search, setSearch, handleSearch }) => {
 
   // const cidades = ["Recife - PE", "São Paulo - SP", "Fortaleza - CE", "Salvador - BA"];
 
@@ -36,7 +36,7 @@ const SearchTemplate = ({ search, setSearch, handleSearchChange }) => {
            <input type="datetime-local" id="dataDevolucao" className={styles.date} />
            </div>
 
-         <button className={styles.button} onClick={handleSearchChange}>Buscar</button>
+         <button className={styles.button} onClick={handleSearch}>Buscar</button>
       </div>
       </div>
         

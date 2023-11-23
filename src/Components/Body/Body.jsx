@@ -28,19 +28,19 @@ function Body() {
         setFilter(selectedFilter);
     };
 
-    const handleSearchChange = (searchQuery) => {
-        setSearch(searchQuery);
+    const handleSearchChange = () => {
+        handleSearch();
     }
 
     useEffect(() => {
         handleSearch();
-    }, [filter, search]);
+    }, [filter]);
 
     
 
     return (
         <main className={styles.body}>
-            <SearchTemplate search={search} setSearch={setSearch} handleSearch={handleSearchChange}/>
+            <SearchTemplate search={search} setSearch={setSearch} handleSearch={handleSearch}/>
 
 
             <Carousel className={styles.carousel}>
