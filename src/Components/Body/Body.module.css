@@ -1,0 +1,137 @@
+.carousel {
+  max-width: 100%;
+  max-height: 347px;
+  background-color: #333;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
+  margin-bottom: 1.25rem;
+}
+
+.imgCarousel {
+  display: block;
+  margin: 0 auto;
+  max-height: 20rem;
+  width: 100%;
+  height: auto; 
+  object-fit: cover;
+  object-position: center; 
+}
+
+.carouselTitle {
+  display: flex;
+  color: #ffffff96;
+  font-weight: 700;
+  font-size: 2.5rem;
+  justify-content: center;
+  padding: 10px; 
+  text-shadow: 2px 2px 8px rgba(22, 22, 22, 0.726);
+}
+
+.carouselDescricao {
+  width: 100%;
+  display: flex;
+  color: #ffffff94;
+  font-weight: 700;
+  font-size: 1.5rem;
+  justify-content: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.886);
+}
+
+.cardForTitle {
+  align-items:center;
+  display: flex;
+  width: 100%;
+  flex-direction: column; 
+  min-height: min-content; 
+}
+
+.cardTitle{
+  padding: 10px;
+  display: flex;
+  color: #31363F;
+  font-weight: 700;
+  font-size: 1.8rem;
+  justify-content: flex-start;
+  
+} 
+
+
+.sectionCard {
+  padding: 0.5rem;
+  background-color: #DFE4EA;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
+}
+
+.cardCars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0 2.5rem;
+  margin-bottom: 6rem;   
+}
+
+.cardContainer {
+  background-color: #F0572D;
+  max-width: 22rem;
+  height: 17rem;
+  border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.imgCar {
+  /* max-width: 21.875rem; */
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3rem;
+  object-fit: cover;
+}
+
+.modelCar {
+  font-weight: 700;
+  margin-top: 0.8rem;
+}  
+
+.yearCar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.2rem 1rem;
+}
+
+.span {
+  font-size: 0.75rem;
+  color: #302f2faa;
+}
+
+.buttonCar {
+  width: 9.375rem;
+  padding: 0.125rem 0.25rem;
+  border-radius: 4px;
+  border: 1px solid #F0572D;
+  cursor: pointer;
+  background-color: #F0572D;
+  color: #fff;
+  font-weight: bold;
+  font-size:medium;
+  transition: all .3s ease-in-out;
+}
+
+.buttonCar:hover {
+  border: 1px solid #F0572D;
+  background-color: #fff; 
+  color: #F0572D;
+  font-weight: bold;
+}
+
+@media (max-width: 460px) {
+  .carouselTitle {
+    font-size: 2rem;
+   
+  }
+  
+  .carouselDescricao {
+    display: none;
+ }
+}
